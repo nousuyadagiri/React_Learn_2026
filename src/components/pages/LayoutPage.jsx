@@ -6,13 +6,14 @@ import UseReducer from "../UseReducer/Usereducer";
 import ToDoList from "../UseReducer/ToDoList";
 import UseOptimisticPage from "../UseOptimistic/UseOptimisticPage";
 import ContextExample from "../context/ContextExample";
+import UseMemo from "../UseMemo/UseMemo";
 
 const LayoutPage = () => {
   return (
     <div className="py-10 max-w-7xl m-auto">
       <div className="flex justify-center items-center  gap-5">
         {/* api data fetch */}
-        <ApiFetch />
+        {/* <ApiFetch /> */}
 
         {/* hooks */}
         {/* <CustomHookData /> */}
@@ -21,6 +22,7 @@ const LayoutPage = () => {
         {/* <ToDoList /> */}
         {/* <UseOptimisticPage /> */}
         {/* <ContextExample /> */}
+        <UseMemo />
       </div>
     </div>
   );
