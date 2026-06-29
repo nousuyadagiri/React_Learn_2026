@@ -1,12 +1,13 @@
 import React from "react";
 import ApiFetch from "../api/ApiFetch";
-import CustomHookData from "../customHook/CustomHookData";
-import UseState from "../UseState/UseState";
-import UseReducer from "../UseReducer/Usereducer";
-import ToDoList from "../UseReducer/ToDoList";
-import UseOptimisticPage from "../UseOptimistic/UseOptimisticPage";
+import CustomHookData from "../hooks/customHook/CustomHookData";
+import UseState from "../hooks/UseState/UseState";
+import UseReducer from "../hooks/UseReducer/Usereducer";
+import ToDoList from "../hooks/UseReducer/ToDoList";
+import UseOptimisticPage from "../hooks/UseOptimistic/UseOptimisticPage";
 import ContextExample from "../context/ContextExample";
-import UseMemo from "../UseMemo/UseMemo";
+import UseMemo from "../hooks/UseMemo/UseMemo";
+import UseCallback from "../hooks/UseCallback/UseCallback";
 
 const LayoutPage = () => {
   return (
@@ -22,7 +23,8 @@ const LayoutPage = () => {
         {/* <ToDoList /> */}
         {/* <UseOptimisticPage /> */}
         {/* <ContextExample /> */}
-        <UseMemo />
+        {/* <UseMemo /> */}
+        <UseCallback />
       </div>
     </div>
   );
